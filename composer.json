@@ -1,4 +1,15 @@
 {
+	"name": "n0nag0n/fatfree-environment-check",
+    "description": "A small library that adds a route that runs a series of checks against your environment to make sure it's up to snuff.",
+	"type": "library",
+	"license": "MIT",
+    "authors": [
+        {
+            "name": "n0nag0n",
+            "email": "n0nag0n@sky-9.com"
+        }
+	],
+	"minimum-stability": "stable",
     "require": {
         "bcosca/fatfree-core": "^3.7"
 	},
@@ -6,5 +17,8 @@
 		"psr-4" : {
 			"n0nag0n\\" : "src/"
 		}
+	},
+	"config" : {
+		"optimize-autoloader": true
 	}
 }
