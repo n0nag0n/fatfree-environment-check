@@ -1,0 +1,10 @@
+{
+    "require": {
+        "bcosca/fatfree-core": "^3.7"
+	},
+	"autoload": {
+		"psr-4" : {
+			"n0nag0n\\" : "src/"
+		}
+	}
+}

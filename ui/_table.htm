@@ -1,0 +1,20 @@
+<table class="table table-striped table-bordered">
+	<col width="300"/>
+	<col width="200"/>
+	<thead>
+		<tr>
+			<th>Configuration</th>
+			<th>Result</th>
+			<th>Note</th>
+		</tr>
+	</thead>
+	<tbody>
+		<repeat group="{{ @configs }}" value="{{ @config }}">
+		<tr>
+			<td>{{ @config.title }}</td>
+			<td class="bg-{{ @config.class }} text-white">{{ @config.value | raw }}</td>
+			<td>{{ @config.note }}</td>
+		</tr>
+		</repeat>
+	</tbody>
+</table>
