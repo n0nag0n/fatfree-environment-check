@@ -183,7 +183,7 @@ class Environment_Check extends \Prefab {
 			];
 		}
 
-		$is_https = $_SERVER['HTTPS'] === 'on';
+		$is_https = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on';
 		$host_configs[] = [
 			'title' => 'HTTPS Secure Protocol',
 			'value' => ($is_https ? $this->html_check : $this->html_x),
